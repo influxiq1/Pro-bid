@@ -52,6 +52,14 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ]
             }
           }
         },
@@ -63,6 +71,8 @@
           "configurations": {
             "production": {
               "browserTarget": "probidnew:build:production"
+            },"dev": {
+              "browserTarget": "probidnew:build:dev"
             }
           }
         },
@@ -111,6 +121,8 @@
           "configurations": {
             "production": {
               "devServerTarget": "probidnew:serve:production"
+            },"dev": {
+              "devServerTarget": "probidnew:serve:dev"
             }
           }
         }
